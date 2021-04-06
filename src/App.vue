@@ -2,7 +2,6 @@
   <header>
     <div class="avatar container">
       <div class="shadow"></div>
-      <img src="/assets/avatar-3.jpg" alt="" />
     </div>
     <div class="wrapper">
       <h1>
@@ -17,10 +16,10 @@
   <div class="bio container">
     <div class="content">
       <div class="shadow"></div>
-      Sou Lucas, possuo 19 anos, tenho formação de técnico em informativa pelo Instituto Federal de
-      Santa Catarina e experiência com desenvolvimento web, sobretudo front-end. Gosto dessa área
+      Sou Lucas, tenho 19 anos, possuo formação de técnico em informativa pelo Instituto Federal de
+      Santa Catarina e experiência em desenvolvimento web, sobretudo front-end. Gosto dessa área
       e sou curioso para aprender novas técnicas e tecnologias. Também possuo um pouco de
-      experiência em edição de vídeos e animação em <i>After Effects</i>.
+      experiência com edição de vídeos e animação em <i>After Effects</i>.
     </div>
     <div class="content techs">
       <h3> Tecnologias </h3>
@@ -47,7 +46,7 @@
   </div>
 
   <div class="title">
-    <h1><em>P</em>ortfolio</h1>
+    <h1><em>P</em>ortfólio</h1>
     <h6>
       <small>Clique no ícone <i class="fab fa-github"></i> para acessar os repositórios</small>
     </h6>
@@ -73,7 +72,7 @@
         <div class="shadow"></div>
         <h3>Plataforma de academia</h3>
         <div class="content">
-          Plataforma para academia com venda de produtos desenvolvida inteiramente com
+          Plataforma para academia esportiva com venda de produtos desenvolvida inteiramente com
           <b>HTML</b>,
           <b>CSS</b>,
           <b>JavaScript</b> e
@@ -279,24 +278,24 @@ export default {
     &::after, &::before
       content: ''
 
-      width: -1px
-      height: -1px
+      width: 0
+      height: 0
 
       position: absolute
 
     &::before
-      top: -1px
-      left: -1px
+      top: -2px
+      left: -2px
 
-      border-top: 11px solid $gray-900
-      border-right: 31px solid transparent
+      border-top: 12px solid $gray-900
+      border-right: 32px solid transparent
 
     &::after
-      bottom: -1px
-      right: -1px
+      bottom: -2px
+      right: -2px
 
-      border-bottom: 11px solid $purple-900
-      border-left: 31px solid transparent
+      border-bottom: 12px solid $purple-900
+      border-left: 32px solid transparent
 
     .shadow
       width: 100%
@@ -313,17 +312,19 @@ export default {
         content: ''
 
         position: absolute
-        bottom: -1px
-        right: -1px
+        bottom: -2px
+        right: -2px
 
-        border-bottom: 11px solid $gray-900
-        border-left: 31px solid transparent
+        border-bottom: 12px solid $gray-900
+        border-left: 32px solid transparent
 
   header
     display: flex
     align-items: center
 
     .avatar
+      background: url("/assets/avatar.jpg")
+      background-size: 100%
       flex-shrink: 0
 
       width: 100px
@@ -427,18 +428,18 @@ export default {
         position: absolute
 
       &::before
-        top: -1px
-        left: -1px
+        top: -2px
+        left: -2px
 
-        border-top: 11px solid $gray-700
-        border-right: 31px solid transparent
+        border-top: 12px solid $gray-700
+        border-right: 32px solid transparent
 
       &::after
-        bottom: -1px
-        right: -1px
+        bottom: -2px
+        right: -2px
 
-        border-bottom: 11px solid $gray-900
-        border-left: 31px solid transparent
+        border-bottom: 12px solid $gray-900
+        border-left: 32px solid transparent
 
   h3
     background: $gray-800
@@ -524,16 +525,16 @@ export default {
       background: $gray-200
 
       &::before
-        border-top: 11px solid $gray-50
+        border-top: 12px solid $gray-50
 
       &::after
-        border-bottom: 11px solid $blue-400
+        border-bottom: 12px solid $blue-400
 
       .shadow
         background: $blue-400
 
         &::after
-          border-bottom: 11px solid $gray-50
+          border-bottom: 12px solid $gray-50
 
     header
       .wrapper
@@ -555,10 +556,10 @@ export default {
           color: white
 
         &::before
-          border-top: 11px solid $gray-200
+          border-top: 12px solid $gray-200
 
         &::after
-          border-bottom: 11px solid $gray-50
+          border-bottom: 12px solid $gray-50
 
     h3
       background: $gray-300
