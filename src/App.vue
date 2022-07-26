@@ -1,264 +1,200 @@
 <template>
-  <header>
-    <div class="avatar container">
-      <div class="shadow"></div>
-    </div>
-    <div class="wrapper">
-      <h1>
-        <em>L</em>ucas <em>S</em>urdi <em>F</em>ranco
-      </h1>
-      <h6>
-        surdifranco@gmail.com • <small>(49) 98896-8998</small>
-      </h6>
-    </div>
-  </header>
+  <main class="A4">
+    <header class="flex items-center gap-8 mb-6">
+      <AppCard>
+        <div class="avatar" />
+      </AppCard>
+      <div class="flex-auto">
+        <AppTitle title="Lucas Surdi Franco" />
+        <AppSubtitle>
+          lucassurdifranco@gmail.com • <small>(49) 98896-8998</small>
+        </AppSubtitle>
+      </div>
+      <AppCard class="flex flex-col items-end font-light p-4">
+        <a
+          href="https://github.com/LucasSFranco"
+          class="text-white text-xs flex items-center gap-2"
+        >
+          LucasSFranco
+          <i class="text-lg fab fa-github" />
+        </a>
+        <a
+          href="https://br.linkedin.com/in/lucas-surdi-franco-032143230/pt"
+          class="text-white text-xs flex items-center gap-2"
+        >
+          Lucas Surdi Franco
+          <i class="text-lg fab fa-linkedin" />
+        </a>
+      </AppCard>
+    </header>
 
-  <div class="bio container">
-    <div class="content">
-      <div class="shadow"></div>
-      Sou Lucas, tenho 19 anos, possuo formação de técnico em informativa pelo Instituto Federal de
-      Santa Catarina e experiência em desenvolvimento web, sobretudo front-end. Gosto dessa área
-      e sou curioso para aprender novas técnicas e tecnologias. Também possuo um pouco de
-      experiência com edição de vídeos e animação em <i>After Effects</i>.
-    </div>
-    <div class="content techs">
-      <h3> Tecnologias </h3>
-      <b>HTML</b>
-      <i></i> <b>CSS</b>
-      <i></i> <b>JavaScript</b>
-      <i></i> <b>Imba</b>
-      <i></i> <b>Firebase</b>
-      <i></i> <b>React.js</b>
-      <i></i> <b>SQL</b>
-      <i></i> <b>Dexie.js</b>
-      <i></i> <b>Styled Components</b>
-      <i></i> <b>SCSS</b>
-      <i></i> <b>Redux</b>
-      <i></i> <b>Git</b>
-      <i></i> <b>Bootstrap</b>
-      <i></i> <b>Vue.js</b>
-      <i></i> <b>PHP</b>
-      <i></i> <b>Cypress</b>
-      <i></i> <b>Vuex</b>
-      <i></i> <b>Typescript</b>
-      <i></i> <b>Webpack</b>
-    </div>
-  </div>
+    <AppCard class="flex text-sm">
+      <AppArticle
+        :content="'Em 2016, conheci o universo da programação quando meu irmão me apresentou a uma plataforma de desafios de programação, esse foi o impulso que me direcionou a cursar o ensino médio integrado a um curso técnico de informática. Durante esse tempo, realizei projetos pessoais com foco no aprendizado. Após terminar meus estudos, no início de 2021, comecei a trabalhar como desenvolvedor na empresa em que estou atualmente. Meu ponto de partida foi o desenvolvimento frontend, hoje sou desenvolvedor fullstack e curioso por aprender novas tecnologias. Sou proativo, dedicado e prezo pela qualidade.'"
+      />
+      <div class="flex-none bg-zinc-800 w-64">
+        <AppArticle
+          :content="'### Tecnologias\n`JavaScript` `TypeScript` `HTML` `CSS` `SCSS` `Tailwind` `Stitches` `Styled Components` `Bootstrap` `React` `Vue.js` `Imba` `Redux` `Vuex` `Pinia` `Git` `PostgreSQL` `Oracle Database` `Firebase` `IndexedDB` `SQL` `PL/SQL` `Prisma` `Cypress` `Jest` `Node.js` `Socket.io` `Express` `PHP` `Figma` `Storybook` `Webpack` `Vite`'"
+        />
+      </div>
+    </AppCard>
 
-  <div class="title">
-    <h1><em>P</em>ortfólio</h1>
-    <h6>
-      <small>Clique no ícone <i class="fab fa-github"></i> para acessar os repositórios</small>
-    </h6>
-  </div>
+    <AppTitle
+      class="text-center my-4"
+      title="Formação Acadêmica"
+    />
 
-  <div class="row">
-    <div class="col">
-      <div class="card container">
-        <a href="https://github.com/LucasSFranco/imba-chess" class="icon">
-          <i class="fab fa-github"></i>
-        </a>
-        <div class="shadow"></div>
-        <h3>Jogo de xadrez</h3>
-        <div class="content">
-          Jogo de xadrez desenvolvido em <b>Imba</b>. Inclui várias das funcionalidades e regras
-          existentes em um jogo de xadrez real.
-        </div>
+    <AppCard
+      class="text-xs"
+      title="Instituto Federal de Santa Catarina"
+      subtitle="jan de 2017 - dez de 2020"
+    >
+      <AppArticle
+        class="text-sm"
+        :content="'Curso técnico integrado em Informática'"
+      />
+    </AppCard>
+
+    <AppTitle
+      class="text-center my-4"
+      title="Experiência Profissional"
+    />
+
+    <AppCard
+      class="text-xs"
+      title="Compass UOL"
+      subtitle="abr de 2021 - momento"
+    >
+      <AppArticle
+        :content="'A Compass UOL é uma empresa de tecnologia que oferece serviços e soluções de tecnologia para outras empresas, como comércios digitais, aplicativos mobile, modernização de aplicativos, etc. Assim, a empresa possui um sistema interno que contém a gestão de todos esses projetos, controles financeiros, inúmeros relatórios, programas e informações para funcionários e muitos outros recursos. No entanto, o sistema foi criado antes de 2000 estruturado em um banco de dados `Oracle`, portanto, contém muito código legado. Desde quando ingressei na empresa, fui alocado neste projeto, trabalhando para modernizá-lo e melhorá-lo.\n\n---\n\nAtualmente, o frontend está embutido no código `PL/SQL`. Estávamos utilizando jQuery inicialmente, porém concordamos em alterar para o `Vue.js`. Então, fui responsável por criar um repositório Vue.js com a ideia de separar o frontend e backend no futuro. O projeto inclui `Pinia`, `Vue Router`, `Typescript`, `SCSS`, `i18next`, `Cypress` e `Storybook`. Nesse projeto, criei todos os componentes da interface baseando-se nos estilos criados pelo designer e documentei-os usando o Storybook. Todos esses componentes foram, então, incorporados ao código PL/SQL em uma versão simplicada do projeto Vue.js, incluindo apenas o Pinia. Isso renovou completamento as interfaces do sistema, facilitou a implementação de novos módulos e permitiu a criação de novas funcionalidades.'"
+      />
+    </AppCard>
+  </main>
+  <main
+    class="A4"
+    style="margin-top: 1px"
+  >
+    <AppTitle
+      class="text-center"
+      title="Projetos"
+      subtitle=""
+    >
+      <AppSubtitle class="text-center text-xs mb-4">
+        <small>Clique no ícone <i class="fab fa-github" /> para acessar os repositórios</small>
+      </AppSubtitle>
+    </AppTitle>
+
+    <div class="grid grid-cols-2 gap-6">
+      <div class="flex flex-col gap-6">
+        <AppCard
+          class="text-xs"
+          title="Aplicativo de Mensagens"
+          href="https://www.figma.com/file/LG7zpm5vc2nCZ7mkRIQsHh/Chat-Application?node-id=2%3A2700"
+          repository="https://github.com/LucasSFranco/chat-frontend"
+        >
+          <AppArticle
+            :content="'Projeto em desenvolvimento que baseia-se em aplicativos como WhatsApp, Telegram e Discord. No backend, estão sendo criadas duas APIs `Node.js`: API REST para gerenciamento da autenticação utilizando JWTs; e, API Socket para comunicação em tempo real utilizando a biblioteca `Socket.io`. Ambas estão conectadas a um banco `PostgreSQL` utilizando a ORM `Prisma`. O frontend utiliza `React` como framework web, `Stitches` para a criação da estilização e a `Context API` nativa do React para gerenciar o estado da aplicação. Pretende-se fazer o deploy de tudo na `AWS` por meio de um pipeline automatizado criado com `Github Actions`, o qual deve garantir que está tudo funcionando ao rodar os testes em `Jest`, no backend, e em `Cypress`, no frontend.'"
+          />
+        </AppCard>
+        <AppCard
+          class="text-xs"
+          title="Lista de Tarefas"
+          href="https://angry-nobel-17e7b9.netlify.app/"
+          repository="https://github.com/LucasSFranco/vue-task-app"
+        >
+          <AppArticle
+            :content="'Um aplicativo de lista de tarefas criado usando `Vue.js` e `Dexie.js`. Também inclui `Vuex` como gerenciador de estado, `Sass` como pré-processador de CSS e testes de algumas funcionalidades utilizando `Cypress`. Algumas de suas características:\n- formulário de adição de tarefas colapsável;\n- teclas de atalho para abrir e fechar o formulário de adicionar tarefas (teclas ENTER e ESC);\n- skeleton loading;\n- botão para excluir tarefa;\n- botão para alterar o status da tarefa (concluída/pendente);\n- área de texto auto-expansível; e,\n- um design elegante, baseado no Discord.'"
+          />
+        </AppCard>
+        <AppCard
+          class="text-xs"
+          title="Aplicativo de Agendamento"
+          href="https://schedule-app-a70b5.web.app"
+          repository="https://github.com/LucasSFranco/schedule-app"
+        >
+          <AppArticle
+            :content="'Ferramenta desenvolvida em `Imba` para agendar o dia e registrar as atividades realizadas a cada hora. Consiste em adicionar as tarefas diárias a uma lista e, após concluí-las, adicionar o tempo em que cada tarefa foi realizada por meio de uma legenda colorida. Todos esses dados, então, são armazenados localmente no `IndexedDB`. Eu acreditava que realmente usaria a ferramenta nos meus estudos, mas faltou praticidade, então ficou de aprendizado.'"
+          />
+        </AppCard>
       </div>
-      <div class="card container">
-        <a href="https://github.com/LucasSFranco/Churrastop" class="icon">
-          <i class="fab fa-github"></i>
-        </a>
-        <div class="shadow"></div>
-        <h3>Plataforma de academia</h3>
-        <div class="content">
-          Plataforma para academia esportiva com venda de produtos desenvolvida inteiramente com
-          <b>HTML</b>,
-          <b>CSS</b>,
-          <b>JavaScript</b> e
-          <b>Bootstrap</b>. Contém três níveis de acesso:
-          <ul>
-            <li>
-              <strong>administrador:</strong>
-              pode listar, excluir e editar funcionários, clientes e produtos, atualizar o
-              histórico de evolução dos clientes e ver o relatório de vendas;
-            </li>
-            <li>
-              <strong>funcionário:</strong>
-              pode realizar as mesmas ações que o administrador com relação aos clientes; e,
-            </li>
-            <li>
-              <strong>cliente:</strong>
-              pode visualizar os produtos disponíveis, as notificações e seu histórico de evolução.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="card container">
-        <a href="https://github.com/LucasSFranco/haka-website" class="icon">
-          <i class="fab fa-github"></i>
-        </a>
-        <div class="shadow"></div>
-        <h3>Website de portfólio</h3>
-        <div class="content">
-          Site de portfólio desenvolvido com
-          <b>Imba</b> e
-          <b>Firebase</b>. Inclui o cabeçalho e as seções de sobre, serviços, portfólio e contato.
-          Também é responsivo e possui uma área administrativa para editar as categorias do
-          portfólio e as imagens de cada categoria.
-        </div>
+      <div class="flex flex-col gap-6">
+        <AppCard
+          class="text-xs"
+          title="Haka Website"
+          href="https://haka-website.web.app"
+          repository="https://github.com/LucasSFranco/haka-website"
+        >
+          <AppArticle
+            :content="'Um site de portfólio animado desenvolvido para a empresa de publicidade dos meus pais utilizando `Imba` e `Firebase`. Inclui cabeçalho, rodapé e as seções “sobre”, “serviços”, “portfólio” e “contato”. Além disso, é responsivo e possui uma página de administrador na qual é possível alterar as categorias do portfólio e as imagens dos trabalhos de cada categoria.'"
+          />
+        </AppCard>
+        <AppCard
+          class="text-xs"
+          title="Portal de Notícias"
+          href="https://brave-engelbart-cb0aae.netlify.app"
+          repository="https://github.com/LucasSFranco/react-exam"
+        >
+          <AppArticle
+            :content="'O aplicativo é um portal de notícias construído igualmente em `React` e `Vue.js` para exibir notícias sobre dois tópicos (tecnologia e ciência), que são fornecidos pela API do The New York Times. Foi um teste de habilidade que fiz quando ingressei na Compass UOL. Informações detalhadas podem ser encontradas nos repositórios dos projetos.'"
+          />
+        </AppCard>
+        <AppCard
+          class="text-xs"
+          title="E-commerce"
+          href="https://drive.google.com/drive/folders/1XMB89zABOQ5cJ4vcyEGoVVhQ0kqDDk53?usp=sharing"
+          repository="https://github.com/LucasSFranco/php-ecommerce"
+        >
+          <AppArticle
+            :content="'Plataforma de vendas responsiva elaborada para um projeto escolar em `PHP`, `HTML`, `CSS` e `JavaScript` utilizando um banco `MySQL`. Utiliza três níveis de acesso:\n- __administrador__: pode listar, adicionar, excluir e editar produtos e categorias de produtos;\n- __cliente__: pode ver os produtos disponíveis na loja, adicioná-los ao carrinho de compras e finalizar a compra utilizando a API de desenvolvimento do PagSeguro;\n- __visitante__: pode se cadastrar, realizar login e ver os produtos disponíveis na loja.'"
+          />
+        </AppCard>
+        <AppCard
+          class="text-xs"
+          title="Jogo de Xadrez"
+          href="https://imba-chess.web.app"
+          repository="https://github.com/LucasSFranco/imba-chess"
+        >
+          <AppArticle
+            :content="'Jogo de Xadrez desenvolvido em `Imba`. Não está completo, mas já possui muitos recursos que um verdadeiro jogo de xadrez deve possuir. Foi muito divertido codificar e aprendi muito sobre frameworks de desenvolvimento web e sobre a própria lógica de programação.'"
+          />
+        </AppCard>
       </div>
     </div>
-    <div class="col">
-      <div class="card container">
-        <a href="https://github.com/LucasSFranco/php-ecommerce" class="icon">
-          <i class="fab fa-github"></i>
-        </a>
-        <div class="shadow"></div>
-        <h3>E-commerce</h3>
-        <div class="content">
-          Plataforma de vendas responsiva elaborada em
-          <b>PHP</b>,
-          <b>HTML</b>,
-          <b>CSS</b> e
-          <b>JavaScript</b>, utilizando um banco
-          <b>MySQL</b>. Utiliza três níveis de acesso:
-          <ul>
-            <li>
-              <strong>administrador:</strong>
-              pode listar, adicionar, excluir e editar produtos e categorias de produtos;
-            </li>
-            <li>
-              <strong>cliente:</strong>
-              pode ver os produtos, adicioná-los ao carrinho de compras e finalizar a compra; e,
-            </li>
-            <li>
-              <strong>visitante:</strong>
-              pode se cadastrar, realizar login e ver os produtos.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="card container">
-        <a href="https://github.com/LucasSFranco/vue-task-app" class="icon">
-          <i class="fab fa-github"></i>
-        </a>
-        <div class="shadow"></div>
-        <h3>Aplicativo de tarefas</h3>
-        <div class="content">
-          Feito com
-          <b>Vue.js</b> e
-          <b>Dexie.js</b>. Também inclui
-          <b>Vuex</b> como gerenciador de estado e
-          <b>Cypress</b> como biblioteca de testes. Algumas das funcionalidades são:
-          <ul>
-            <li>
-              formulário de adição de tarefas colapsável;
-            </li>
-            <li>
-              atalhos nas teclas ENTER e ESC para abrir e fechar o formulário de adição;
-            </li>
-            <li>
-              <i>skeleton loading</i>;
-            </li>
-            <li>
-              botão para excluir tarefa;
-            </li>
-            <li>
-              botão para alterar o estado da tarefa: concluída ou pendente; e,
-            </li>
-            <li>
-              <i>textarea</i> autoexpansível.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="more container">
-        <a href="https://github.com/LucasSFranco" class="icon">
-          <i class="fab fa-github"></i>
-        </a>
-        <div class="shadow"></div>
-        <div class="content">
-          Veja outros repositórios no meu
-          <a href="https://github.com/LucasSFranco">Github</a>.
-        </div>
-      </div>
-    </div>
-  </div>
-
+  </main>
 </template>
 
 <script>
+
+import AppArticle from './components/AppArticle.vue';
+import AppCard from './components/AppCard.vue';
+import AppSubtitle from './components/AppSubtitle.vue';
+import AppTitle from './components/AppTitle.vue';
+
 export default {
   name: 'App',
+  components: {
+    AppArticle,
+    AppCard,
+    AppSubtitle,
+    AppTitle,
+  },
 };
+
 </script>
 
 <style lang="sass">
-  $gray-50: #fafafa
-  $gray-100: #f4f4f5
-  $gray-200: #e4e4e7
-  $gray-300: #d4d4d8
-  $gray-400: #a1a1aa
-  $gray-500: #71717a
-  $gray-600: #52525b
-  $gray-700: #3f3f46
-  $gray-800: #27272a
-  $gray-900: #18181b
+  html
+    background: var(--gray-900)
 
-  $red-50: #fef2f2
-  $red-100: #fee2e2
-  $red-200: #fecaca
-  $red-300: #fca5a5
-  $red-400: #f87171
-  $red-500: #ef4444
-  $red-600: #dc2626
-  $red-700: #b91c1c
-  $red-800: #991b1b
-  $red-900: #7f1d1d
-
-  $blue-50: #eff6ff
-  $blue-100: #dbeafe
-  $blue-200: #bfdbfe
-  $blue-300: #93c5fd
-  $blue-400: #60a5fa
-  $blue-500: #3b82f6
-  $blue-600: #2563eb
-  $blue-700: #1d4ed8
-  $blue-800: #1e40af
-  $blue-900: #1e3a8a
-
-  $green-50: #f0fdf4
-  $green-100: #dcfce7
-  $green-200: #bbf7d0
-  $green-300: #86efac
-  $green-400: #4ade80
-  $green-500: #22c55e
-  $green-600: #16a34a
-  $green-700: #15803d
-  $green-800: #166534
-  $green-900: #14532d
-
-  $purple-50: #f5f3ff
-  $purple-100: #ede9fe
-  $purple-200: #ddd6fe
-  $purple-300: #c4b5fd
-  $purple-400: #a78bfa
-  $purple-500: #8b5cf6
-  $purple-600: #7c3aed
-  $purple-700: #6d28d9
-  $purple-800: #5b21b6
-  $purple-900: #4c1d95
-
-  body
+  .A4
     width: 210mm
     height: 297mm
 
     display: flex
     flex-direction: column
 
-    background: $gray-900
     padding: 24px
+    z-index: -1
 
   *
     padding: 0
@@ -270,324 +206,14 @@ export default {
 
     font-family: "Poppins", sans-serif
 
-  .container
-    position: relative
+  .avatar
+    background: url("/assets/avatar.jpg")
+    background-size: 100%
 
-    background: $gray-700
+    width: 100px
+    height: 100px
 
-    &::after, &::before
-      content: ''
-
-      width: 0
-      height: 0
-
-      position: absolute
-
-    &::before
-      top: -2px
-      left: -2px
-
-      border-top: 12px solid $gray-900
-      border-right: 32px solid transparent
-
-    &::after
-      bottom: -2px
-      right: -2px
-
-      border-bottom: 12px solid $purple-900
-      border-left: 32px solid transparent
-
-    .shadow
+    img
       width: 100%
-      height: 100%
-
-      position: absolute
-      top: 8px
-      left: 8px
-
-      background: $purple-900
-      z-index: -1
-
-      &::after
-        content: ''
-
-        position: absolute
-        bottom: -2px
-        right: -2px
-
-        border-bottom: 12px solid $gray-900
-        border-left: 32px solid transparent
-
-  header
-    display: flex
-    align-items: center
-
-    .avatar
-      background: url("/assets/avatar.jpg")
-      background-size: 100%
-      flex-shrink: 0
-
-      width: 100px
-      height: 100px
-
-      img
-        width: 100%
-
-    .wrapper
-      flex-grow: 1
-      padding: 0 32px
-
-  .title
-    line-height: 1
-    margin: 16px 0
-    text-align: center
-
-    h6
-      small
-        font-size: 10px
-
-  h1
-    color: $purple-700
-    font-size: 24px
-    font-weight: 600
-    text-transform: uppercase
-
-    em
-      font-size: 32px
-      font-style: normal
-      font-weight: 500
-
-  h6
-    color: $purple-300
-    font-size: 14px
-    font-weight: 300
-
-    small
-      font-size: 12px
-
-  .bio
-    display: flex
-
-    margin: 24px 0 0
-
-    .techs
-      width: 240px
-
-      text-align: left
-
-      background: $gray-800
-      flex-shrink: 0
-
-      h3
-        font-size: 12px
-        padding: 0 0 4px 0
-        text-align: left
-
-      b
-        font-size: 10px
-
-  .row
-    display: flex
-
-    .col
-      width: 50%
-      margin: 0 12px 0 0
-
-    .col + .col
-      margin: 0 0 0 12px
-
-  .card
-    & + &
-      margin-top: 24px
-
-    .content
-      padding-bottom: 24px
-
-    .icon
-      position: absolute
-      bottom: -8px
-      right: -8px
-
-      width: 64px
-      height: 40px
-
-      display: flex
-      justify-content: center
-      align-items: center
-
-      background: $purple-900
-      z-index: 1
-
-      i
-        font-size: 24px
-        color: white
-
-      &::after, &::before
-        content: ''
-
-        position: absolute
-
-      &::before
-        top: -2px
-        left: -2px
-
-        border-top: 12px solid $gray-700
-        border-right: 32px solid transparent
-
-      &::after
-        bottom: -2px
-        right: -2px
-
-        border-bottom: 12px solid $gray-900
-        border-left: 32px solid transparent
-
-  h3
-    background: $gray-800
-    color: white
-    font-size: 14px
-    font-weight: 500
-    padding: 8px 0
-    text-align: center
-    text-transform: uppercase
-
-  .content
-    font-size: 14px
-    font-weight: 300
-    text-align: justify
-    color: $gray-50
-    padding: 16px
-
-    b
-      background: $purple-500
-      border-radius: 3px
-      color: white
-      font-size: 12px
-      font-weight: 400
-      padding: 0 4px
-      white-space: nowrap
-
-    ul
-      margin: 8px 0
-
-      li
-        color: $gray-50
-        font-size: 12px
-        font-weight: 300
-        text-align: justify
-        text-indent: 8px
-
-        &::before
-          content: "•"
-          position: absolute
-          left: 8px
-          color: $purple-500
-
-        strong
-          color: white
-          font-weight: 500
-
-  .more
-    width: calc(100% - 40px)
-
-    margin-top: 32px
-
-    .icon
-      width: 48px
-      height: 44px
-
-      display: flex
-      align-items: center
-      justify-content: center
-
-      color: white
-      position: absolute
-      top: 8px
-      right: -48px
-
-      i
-        font-size: 28px
-
-    .shadow
-      width: calc(100% + 40px)
-
-    .content
-      padding-bottom: 16px
-
-      a
-        color: $purple-400
-        text-decoration: underline
-        text-decoration-thickness: 2px
-
-  .light
-    background: $gray-50
-
-    .container
-      background: $gray-200
-
-      &::before
-        border-top: 12px solid $gray-50
-
-      &::after
-        border-bottom: 12px solid $blue-400
-
-      .shadow
-        background: $blue-400
-
-        &::after
-          border-bottom: 12px solid $gray-50
-
-    header
-      .wrapper
-        h1
-          color: $blue-400
-
-        h6
-          color: $gray-400
-
-    .bio
-      .techs
-        background: $gray-300
-
-    .card
-      .icon
-        background: $blue-400
-
-        i
-          color: white
-
-        &::before
-          border-top: 12px solid $gray-200
-
-        &::after
-          border-bottom: 12px solid $gray-50
-
-    h3
-      background: $gray-300
-      color: $gray-800
-
-    .content
-      color: $gray-800
-
-      b
-        background: $blue-400
-        color: white
-
-      ul
-        li
-          color: $gray-800
-
-          &::before
-            color: $blue-500
-
-          strong
-            color: $gray-900
-
-    .more
-      .icon
-        color: white
-
-      .content
-        a
-          color: $blue-400
 
 </style>
