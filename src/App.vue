@@ -30,43 +30,43 @@
 
     <AppCard class="flex text-sm">
       <AppArticle
-        :content="'Em 2016, conheci o universo da programação quando meu irmão me apresentou a uma plataforma de desafios de programação, esse foi o impulso que me direcionou a cursar o ensino médio integrado a um curso técnico de informática. Durante esse tempo, realizei projetos pessoais com foco no aprendizado. Após terminar meus estudos, no início de 2021, comecei a trabalhar como desenvolvedor na empresa em que estou atualmente. Meu ponto de partida foi o desenvolvimento frontend, hoje sou desenvolvedor fullstack e curioso por aprender novas tecnologias. Sou proativo, dedicado e prezo pela qualidade.'"
+        :content="'In 2016, I discovered the coding universe when my brother introduced me to a platform of programming challenges. It encouraged me to join a high school integrated with an IT vocational training course. During this time, I developed many personal projects focusing on learning. After finish my studies, at the beginning of 2021, I started to work as a developer at the company I am currently working for. I\'m a heavy frontend developer, because it was my starting point, but today I am fullstack, curious to learn new technologies and improve my skills. I am proactive, dedicated and like to face technical challenges.'"
       />
       <div class="flex-none bg-zinc-800 w-64">
         <AppArticle
-          :content="'### Tecnologias\n`JavaScript` `TypeScript` `HTML` `CSS` `SCSS` `Tailwind` `Stitches` `Styled Components` `Bootstrap` `React` `Vue.js` `Imba` `Redux` `Vuex` `Pinia` `Git` `PostgreSQL` `Oracle Database` `Firebase` `IndexedDB` `SQL` `PL/SQL` `Prisma` `Cypress` `Jest` `Node.js` `Socket.io` `Express` `PHP` `Figma` `Storybook` `Webpack` `Vite`'"
+          :content="'### Technologies\n`JavaScript` `TypeScript` `HTML` `CSS` `SCSS` `Tailwind` `Stitches` `Styled Components` `Bootstrap` `React` `Vue.js` `Imba` `Redux` `Vuex` `Pinia` `Git` `PostgreSQL` `Oracle Database` `Firebase` `IndexedDB` `SQL` `PL/SQL` `Prisma` `Cypress` `Jest` `Node.js` `Socket.io` `Express` `PHP` `Figma` `Storybook` `Webpack` `Vite`'"
         />
       </div>
     </AppCard>
 
     <AppTitle
       class="text-center my-4"
-      title="Formação Acadêmica"
+      title="Education"
     />
 
     <AppCard
       class="text-xs"
       title="Instituto Federal de Santa Catarina"
-      subtitle="jan de 2017 - dez de 2020"
+      subtitle="jan 2017 - dec 2020"
     >
       <AppArticle
         class="text-sm"
-        :content="'Curso técnico integrado em Informática'"
+        :content="'Technical course in Information Technology'"
       />
     </AppCard>
 
     <AppTitle
       class="text-center my-4"
-      title="Experiência Profissional"
+      title="Professional Experience"
     />
 
     <AppCard
       class="text-xs"
       title="Compass UOL"
-      subtitle="abr de 2021 - momento"
+      subtitle="apr 2021 - moment"
     >
       <AppArticle
-        :content="'A Compass UOL é uma empresa de tecnologia que oferece serviços e soluções de tecnologia para outras empresas, como comércios digitais, aplicativos mobile, modernização de aplicativos, etc. Assim, a empresa possui um sistema interno que contém a gestão de todos esses projetos, controles financeiros, inúmeros relatórios, programas e informações para funcionários e muitos outros recursos. No entanto, o sistema foi criado antes de 2000 estruturado em um banco de dados `Oracle`, portanto, contém muito código legado. Desde quando ingressei na empresa, fui alocado neste projeto, trabalhando para modernizá-lo e melhorá-lo.\n\n---\n\nAtualmente, o frontend está embutido no código `PL/SQL`. Estávamos utilizando jQuery inicialmente, porém concordamos em alterar para o `Vue.js`. Então, fui responsável por criar um repositório Vue.js com a ideia de separar o frontend e backend no futuro. O projeto inclui `Pinia`, `Vue Router`, `Typescript`, `SCSS`, `i18next`, `Cypress` e `Storybook`. Nesse projeto, criei todos os componentes da interface baseando-se nos estilos criados pelo designer e documentei-os usando o Storybook. Todos esses componentes foram, então, incorporados ao código PL/SQL em uma versão simplicada do projeto Vue.js, incluindo apenas o Pinia. Isso renovou completamento as interfaces do sistema, facilitou a implementação de novos módulos e permitiu a criação de novas funcionalidades.'"
+        :content="'Compass UOL is a technology company that offers technology services and solutions to other companies, such as digital commerce, mobile applications, application modernization, etc. Thus, the company has a system to manage all these projects, administer the bills, provide information and contents to employees and many other resources. However, the system was created before 2000s structured on an `Oracle database`, so it contains a lot of legacy code. Since I joined the company, I was allocated to this project, working to modernize and improve it.\n\n---\n\nCurrently, the frontend is embedded in `PL/SQL` code. We were using jQuery initially, but we agreed to switch to `Vue.js`. So, I was responsible for creating a Vue.js repository with the idea of separating the frontend and backend in the future. The project includes `Pinia`, `Vue Router`, `Typescript`, `SCSS`, `i18next`, `Cypress` and `Storybook`. In this project, I created all the interface components as per the UX design and documented them using Storybook. All these components were then merged into the PL/SQL code in a simplified version of the Vue.js project, including just Pinia. This completely renewed the system\'s interfaces, facilitated the implementation of new modules and allowed the creation of new functionalities.'"
       />
     </AppCard>
   </main>
@@ -76,11 +76,11 @@
   >
     <AppTitle
       class="text-center"
-      title="Projetos"
+      title="Side Projects"
       subtitle=""
     >
       <AppSubtitle class="text-center text-xs mb-4">
-        <small>Clique no ícone <i class="fab fa-github" /> para acessar os repositórios</small>
+        <small>Click in the <i class="fab fa-github" /> icon to access the repositories</small>
       </AppSubtitle>
     </AppTitle>
 
@@ -88,32 +88,32 @@
       <div class="flex flex-col gap-6">
         <AppCard
           class="text-xs"
-          title="Aplicativo de Mensagens"
+          title="Messaging App"
           href="https://www.figma.com/file/LG7zpm5vc2nCZ7mkRIQsHh/Chat-Application?node-id=2%3A2700"
           repository="https://github.com/LucasSFranco/chat-frontend"
         >
           <AppArticle
-            :content="'Projeto em desenvolvimento que baseia-se em aplicativos como WhatsApp, Telegram e Discord. No backend, estão sendo criadas duas APIs `Node.js`: API REST para gerenciamento da autenticação utilizando JWTs; e, API Socket para comunicação em tempo real utilizando a biblioteca `Socket.io`. Ambas estão conectadas a um banco `PostgreSQL` utilizando a ORM `Prisma`. O frontend utiliza `React` como framework web, `Stitches` para a criação da estilização e a `Context API` nativa do React para gerenciar o estado da aplicação. Pretende-se fazer o deploy de tudo na `AWS` por meio de um pipeline automatizado criado com `Github Actions`, o qual deve garantir que está tudo funcionando ao rodar os testes em `Jest`, no backend, e em `Cypress`, no frontend.'"
+            :content="'Project in development that is based on applications like WhatsApp, Telegram and Discord. On the backend, two `Node.js` APIs are being created: REST API for managing authentication using JWTs; and, Socket API for real-time communication using the `Socket.io` library. Both are connected to a `PostgreSQL` database using the `Prisma` ORM. The frontend uses `React` as the web framework, `Stitches` for styling and React\'s built-in `Context API` for managing application state. It is intended to deploy everything on `AWS` through an automated pipeline created with `Github Actions`, which should guarantee that everything is working when running the `Jest` tests, on the backend, and the `Cypress` tests, on the frontend.'"
           />
         </AppCard>
         <AppCard
           class="text-xs"
-          title="Lista de Tarefas"
+          title="Task List"
           href="https://angry-nobel-17e7b9.netlify.app/"
           repository="https://github.com/LucasSFranco/vue-task-app"
         >
           <AppArticle
-            :content="'Um aplicativo de lista de tarefas criado usando `Vue.js` e `Dexie.js`. Também inclui `Vuex` como gerenciador de estado, `Sass` como pré-processador de CSS e testes de algumas funcionalidades utilizando `Cypress`. Algumas de suas características:\n- formulário de adição de tarefas colapsável;\n- teclas de atalho para abrir e fechar o formulário de adicionar tarefas (teclas ENTER e ESC);\n- skeleton loading;\n- botão para excluir tarefa;\n- botão para alterar o status da tarefa (concluída/pendente);\n- área de texto auto-expansível; e,\n- um design elegante, baseado no Discord.'"
+            :content="'A to-do list application created using `Vue.js` and `Dexie.js`. It also includes `Vuex` as a state manager, `Sass` as a CSS preprocessor and `Cypress` to test some functionalities. Some of its features:\n- collapsible add task form;\n- hotkeys to open and close add task form (ENTER and ESC keys);\n- skeleton loading;\n- delete task button;\n- toggle task completion (completed/pending) button;\n- self-expandable textarea; and,\n- an elegant design, inspired by Discord.'"
           />
         </AppCard>
         <AppCard
           class="text-xs"
-          title="Aplicativo de Agendamento"
+          title="Scheduling Application"
           href="https://schedule-app-a70b5.web.app"
           repository="https://github.com/LucasSFranco/schedule-app"
         >
           <AppArticle
-            :content="'Ferramenta desenvolvida em `Imba` para agendar o dia e registrar as atividades realizadas a cada hora. Consiste em adicionar as tarefas diárias a uma lista e, após concluí-las, adicionar o tempo em que cada tarefa foi realizada por meio de uma legenda colorida. Todos esses dados, então, são armazenados localmente no `IndexedDB`. Eu acreditava que realmente usaria a ferramenta nos meus estudos, mas faltou praticidade, então ficou de aprendizado.'"
+            :content="'Tool developed in `Imba` to schedule the day and record the activities performed every hour. It consists of adding the daily tasks to a list and, after completing them, adding the time each task was performed through a colored legend. All this data is then stored locally in `IndexedDB`. I believed that I would really use the tool in my studies, but the user experience ended up being not so good, so it was just a learning experience.'"
           />
         </AppCard>
       </div>
@@ -125,37 +125,37 @@
           repository="https://github.com/LucasSFranco/haka-website"
         >
           <AppArticle
-            :content="'Um site de portfólio animado desenvolvido para a empresa de publicidade dos meus pais utilizando `Imba` e `Firebase`. Inclui cabeçalho, rodapé e as seções “sobre”, “serviços”, “portfólio” e “contato”. Além disso, é responsivo e possui uma página de administrador na qual é possível alterar as categorias do portfólio e as imagens dos trabalhos de cada categoria.'"
+            :content="'An animated portfolio website developed for my parents\' advertising company using `Imba` and `Firebase`. Includes header, footer and the sections “about”, “services”, “portfolio” and “contact”. In addition, it is responsive and has an admin page where the user can change the portfolio categories and the images of the work done for each category.'"
           />
         </AppCard>
         <AppCard
           class="text-xs"
-          title="Portal de Notícias"
+          title="News Portal"
           href="https://brave-engelbart-cb0aae.netlify.app"
           repository="https://github.com/LucasSFranco/react-exam"
         >
           <AppArticle
-            :content="'O aplicativo é um portal de notícias construído igualmente em `React` e `Vue.js` para exibir notícias sobre dois tópicos (tecnologia e ciência), que são fornecidos pela API do The New York Times. Foi um teste de habilidade que fiz quando ingressei na Compass UOL. Informações detalhadas podem ser encontradas nos repositórios dos projetos.'"
+            :content="'The app is a news portal built equally on `React` and `Vue.js` to display news on two topics (technology and science), which are provided by The New York Times API. It was a skill test I took when I joined the company Compass UOL.'"
           />
         </AppCard>
         <AppCard
           class="text-xs"
-          title="E-commerce"
+          title="Ecommerce"
           href="https://drive.google.com/drive/folders/1XMB89zABOQ5cJ4vcyEGoVVhQ0kqDDk53?usp=sharing"
           repository="https://github.com/LucasSFranco/php-ecommerce"
         >
           <AppArticle
-            :content="'Plataforma de vendas responsiva elaborada para um projeto escolar em `PHP`, `HTML`, `CSS` e `JavaScript` utilizando um banco `MySQL`. Utiliza três níveis de acesso:\n- __administrador__: pode listar, adicionar, excluir e editar produtos e categorias de produtos;\n- __cliente__: pode ver os produtos disponíveis na loja, adicioná-los ao carrinho de compras e finalizar a compra utilizando a API de desenvolvimento do PagSeguro;\n- __visitante__: pode se cadastrar, realizar login e ver os produtos disponíveis na loja.'"
+            :content="'Responsive sales platform designed for a school project in `PHP`, `HTML`, `CSS` and `JavaScript` using a `MySQL` database. It uses three levels of access:\n- __administrator__: can list, add, delete and edit products and product categories;\n- __customer__: can see the products available in the store, add them to the shopping cart and complete the purchase using the PagSeguro development API;\n- __visitor__: can register, login and see the products available in the store.'"
           />
         </AppCard>
         <AppCard
           class="text-xs"
-          title="Jogo de Xadrez"
+          title="Chess Game"
           href="https://imba-chess.web.app"
           repository="https://github.com/LucasSFranco/imba-chess"
         >
           <AppArticle
-            :content="'Jogo de Xadrez desenvolvido em `Imba`. Não está completo, mas já possui muitos recursos que um verdadeiro jogo de xadrez deve possuir. Foi muito divertido codificar e aprendi muito sobre frameworks de desenvolvimento web e sobre a própria lógica de programação.'"
+            :content="'Chess game developed in `Imba`. It\'s not complete, but it already has many features that a real chess game should have. It was very funny to code and I learned a lot about Imba language and about programming logic itself.'"
           />
         </AppCard>
       </div>
