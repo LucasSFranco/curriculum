@@ -63,7 +63,7 @@
     <AppCard
       class="text-xs"
       title="Compass UOL"
-      subtitle="abr de 2021 - momento"
+      subtitle="desenvolvedor pleno • abr de 2021 - momento"
     >
       <AppArticle
         :content="'A Compass UOL é uma empresa de tecnologia que oferece serviços e soluções de tecnologia para outras empresas, como comércios digitais, aplicativos mobile, modernização de aplicativos, etc. Assim, a empresa possui um sistema interno que contém a gestão de todos esses projetos, controles financeiros, inúmeros relatórios, programas e informações para funcionários e muitos outros recursos. No entanto, o sistema foi criado antes de 2000 estruturado em um banco de dados `Oracle`, portanto, contém muito código legado. Desde quando ingressei na empresa, fui alocado neste projeto, trabalhando para modernizá-lo e melhorá-lo.\n\n---\n\nAtualmente, o frontend está embutido no código `PL/SQL`. Estávamos utilizando jQuery inicialmente, porém concordamos em alterar para o `Vue.js`. Então, fui responsável por criar um repositório Vue.js com a ideia de separar o frontend e backend no futuro. O projeto inclui `Pinia`, `Vue Router`, `Typescript`, `SCSS`, `i18next`, `Cypress` e `Storybook`. Nesse projeto, criei todos os componentes da interface baseando-se nos estilos criados pelo designer e documentei-os usando o Storybook. Todos esses componentes foram, então, incorporados ao código PL/SQL em uma versão simplicada do projeto Vue.js, incluindo apenas o Pinia. Isso renovou completamento as interfaces do sistema, facilitou a implementação de novos módulos e permitiu a criação de novas funcionalidades.'"
